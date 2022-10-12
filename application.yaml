@@ -15,8 +15,8 @@ spec:
 
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true # if namespace specified in destination doesnt exist, create!
+    - CreateNamespace=true # if namespace specified in destination doesnt exist, create!
 
-      automated: # Enable auto sync
-        selfHeal: true # Override any manual changes to the k8s cluster
-        prune: true # If component is renamed or service is deleted, we want argocd to do the deletion of old components
+    automated: # Enable auto sync
+      selfHeal: true # Override any manual changes to the k8s cluster
+      prune: true # If component is renamed or service is deleted, we want argocd to do the deletion of old components
